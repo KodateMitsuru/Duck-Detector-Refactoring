@@ -94,6 +94,8 @@ class AdbRuntimeRepository(
         properties.initAdbdState != null ||
             usb.state == AdbProbeState.OBSERVED ||
             usb.state == AdbProbeState.NOT_OBSERVED ||
+            initSocket.state == AdbProbeState.OBSERVED ||
+            initSocket.state == AdbProbeState.NOT_OBSERVED ||
             usbDebuggingEnabled != null ||
             wirelessDebuggingEnabled != null
 
